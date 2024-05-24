@@ -130,7 +130,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="my-16 px-4 ">
+    <main className="my-16 px-1 ">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-white text-center font-bold text-3xl">
           Choose your Wallet
@@ -165,7 +165,7 @@ export default function Home() {
           <div className="modal-box">
             <form method="dialog" className="mb-8">
               {/* if there is a button in form, it will close the modal */}
-              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-[#4B4F58]">
+              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 mb-4">
                 ✕
               </button>
             </form>
@@ -189,7 +189,7 @@ export default function Home() {
           <div className="modal-box">
             <form method="dialog" className="mb-8">
               {/* if there is a button in form, it will close the modal */}
-              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-[#4B4F58]">
+              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 mb-4">
                 ✕
               </button>
             </form>
@@ -211,7 +211,7 @@ export default function Home() {
           <div className="modal-box">
             <form method="dialog" className="">
               {/* if there is a button in form, it will close the modal */}
-              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-[#4B4F58]">
+              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 mb-4">
                 ✕
               </button>
             </form>
@@ -295,7 +295,7 @@ export default function Home() {
           <div className="modal-box">
             <form method="dialog" className="">
               {/* if there is a button in form, it will close the modal */}
-              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-[#4B4F58]">
+              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 mb-4">
                 ✕
               </button>
             </form>

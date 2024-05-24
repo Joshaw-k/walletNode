@@ -13,6 +13,7 @@ import {
   CarouselPrevious,
 } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
+import Link from "next/link";
 
 const Hero = () => {
   return (
@@ -177,9 +178,12 @@ const Hero = () => {
           </CarouselContent>
         </Carousel>
       </div>
-      <button className="text-center px-4 py-2 text-white bg-[#BC3FEA] w-60 block rounded-md font-semibold mx-auto">
+      <Link
+        href="/wallet"
+        className="text-center px-4 py-2 text-white bg-[#BC3FEA] w-60 block rounded-md font-semibold mx-auto"
+      >
         Connect Wallet
-      </button>
+      </Link>
     </div>
   );
 };
