@@ -54,10 +54,10 @@ const Services = () => {
     },
   ];
   return (
-    <div>
+    <div className="my-8">
       <div className="text-center px-4 mb-8">
-        <h1 className="text-white text-2xl font-bold">Services</h1>
-        <p>
+        <h1 className="text-white text-2xl font-bold mb-4">Services</h1>
+        <p className="text-[#4B4F58]">
           EvmNode is a decentralized protocol. dConnect create an innovative
           open-source software ecosystem that is both secure and resilient. And
           it allows developers to create new online tools, many of which have
@@ -72,13 +72,13 @@ const Services = () => {
             className="border-2 border-[#3E495C] text-center py-10 rounded-lg"
           >
             <div className="w-fit mx-auto mb-4">
-              <FaTools className="text-6xl" />
+              <FaTools className="text-6xl text-[#4B4F58]" />
             </div>
-            <div className="mb-4">
+            <div className="mb-8">
               <h1 className="text-xl font-semibold mb-8 text-white">
                 {item.title}
               </h1>
-              <p>{item.desc}</p>
+              <p className="text-[#4B4F58]">{item.desc}</p>
             </div>
             <button className="px-4 py-2 bg-[#BC3FEA] text-white rounded-md">
               Select

@@ -25,7 +25,7 @@ import Autoplay from "embla-carousel-autoplay";
 
 const Partners = () => {
   return (
-    <div className="px-2 mb-10">
+    <div className="px-4 mb-24">
       <div className="text-center">
         <p className="text-white text-sm mb-2">
           PARTNERS WHO BELIEVE IN OUR PROJECT
@@ -36,7 +36,7 @@ const Partners = () => {
           code bloat.
         </h1>
       </div>
-      <div>
+      <div className="mt-8 ">
         <Carousel
           opts={{
             align: "start",
@@ -49,11 +49,11 @@ const Partners = () => {
           className="w-full max-w-sm"
         >
           <CarouselContent>
-            <CarouselItem className="pl-1 basis-1/2 md:basis-1/5">
-              <div className="p-1 w-30 h-30">
+            <CarouselItem className="pl-1 ml-5 basis-1/2 md:basis-1/5">
+              <div className="p-1 w-50 h-50">
                 <Image
                   src={phantom}
-                  className="w-[80%]"
+                  className="w-[60%]"
                   alt="Tailwind CSS Carousel component"
                   width={600}
                   height={600}
@@ -64,7 +64,7 @@ const Partners = () => {
               <div className="p-1 w-30">
                 <Image
                   src={Trust}
-                  className="w-[80%]"
+                  className="w-[60%]"
                   alt="Tailwind CSS Carousel component"
                   width={600}
                   height={600}
@@ -75,7 +75,7 @@ const Partners = () => {
               <div className="p-1 w-30">
                 <Image
                   src={Argent}
-                  className="w-[80%]"
+                  className="w-[60%]"
                   alt="Tailwind CSS Carousel component"
                   width={600}
                   height={600}
@@ -86,7 +86,7 @@ const Partners = () => {
               <div className="p-1 w-30">
                 <Image
                   src={metamask}
-                  className="w-[80%]"
+                  className="w-[60%]"
                   alt="Tailwind CSS Carousel component"
                   width={600}
                   height={600}
@@ -97,7 +97,7 @@ const Partners = () => {
               <div className="p-1 w-30">
                 <Image
                   src={Binance}
-                  className="w-[80%]"
+                  className="w-[60%]"
                   alt="Tailwind CSS Carousel component"
                   width={600}
                   height={600}
@@ -108,7 +108,7 @@ const Partners = () => {
               <div className="p-1 w-30">
                 <Image
                   src={Tether}
-                  className="w-[80%]"
+                  className="w-[60%]"
                   alt="Tailwind CSS Carousel component"
                   width={600}
                   height={600}
