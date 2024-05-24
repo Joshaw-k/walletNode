@@ -87,13 +87,13 @@ export default function Home() {
 
     tabs.forEach((tab, index) => {
       if (tab.id == tabs[0].id) {
-        tab.classList.add("tabActive", "text-white");
+        tab.classList.add("tabActive", "text-black");
         tab.classList.remove("text-[#5B5B5B]");
       }
 
       tab.addEventListener("click", (e) => {
         tabs.forEach((tab) => {
-          tab.classList.remove("tabActive", "text-white");
+          tab.classList.remove("tabActive", "text-black");
           tab.classList.add("text-[#5B5B5B]");
         });
         setKeyType(e.target.innerText);
@@ -105,7 +105,7 @@ export default function Home() {
           "px";
 
         if (tab.id == tabs[index].id) {
-          tab.classList.add("tabActive", "text-white");
+          tab.classList.add("tabActive", "text-black");
           tab.classList.remove("text-[#5B5B5B]");
         }
       });
@@ -130,7 +130,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="my-16 px-1 ">
+    <main className="my-16 px-4">
       <div className="max-w-7xl mx-auto">
         <h1 className="text-white text-center font-bold text-3xl">
           Choose your Wallet
@@ -160,12 +160,12 @@ export default function Home() {
         </div>
         <dialog
           id="my_modal_1"
-          className="modal w-full border-[#4B4F58] bg-[rgb(32,32,32)] px-2"
+          className="modal w-full mx-auto border-[#4B4F58] bg-[rgb(32,32,32)] px-2"
         >
           <div className="modal-box">
-            <form method="dialog" className="mb-8">
+            <form method="dialog" className="mb-10">
               {/* if there is a button in form, it will close the modal */}
-              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 mb-4">
+              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
                 ✕
               </button>
             </form>
@@ -184,12 +184,12 @@ export default function Home() {
         </dialog>
         <dialog
           id="my_modal_2"
-          className="modal w-full border-[#4B4F58] bg-[rgb(32,32,32)] px-2"
+          className="modal w-full mx-auto border-[#4B4F58] bg-[rgb(32,32,32)] px-2"
         >
           <div className="modal-box">
-            <form method="dialog" className="mb-8">
+            <form method="dialog" className="mb-10">
               {/* if there is a button in form, it will close the modal */}
-              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 mb-4">
+              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
                 ✕
               </button>
             </form>
@@ -206,16 +206,16 @@ export default function Home() {
         </dialog>
         <dialog
           id="my_modal_3"
-          className="modal w-full border-[#4B4F58] bg-[rgb(32,32,32)] px-2"
+          className="modal w-full mx-auto border-[#4B4F58] bg-[rgb(32,32,32)]"
         >
           <div className="modal-box">
-            <form method="dialog" className="">
+            <form method="dialog" className="mb-">
               {/* if there is a button in form, it will close the modal */}
               <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 mb-4">
                 ✕
               </button>
             </form>
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center  px-3">
               <div className="">
                 <div className="w-full">
                   <div
@@ -230,7 +230,7 @@ export default function Home() {
                       aria-controls="panel-1"
                       id="tab-1"
                       tabIndex="0"
-                      className="relative block px-3 tab py-8 text-[#5B5B5B] xs:text-sm"
+                      className="relative block px-3 tab text-[#5B5B5B] xs:text-sm"
                     >
                       <span>Phrase</span>
                     </button>
@@ -240,7 +240,7 @@ export default function Home() {
                       aria-controls="panel-2"
                       id="tab-2"
                       tabIndex="-1"
-                      className="relative block px-3 tab py-8 text-[#5B5B5B] xs:text-sm"
+                      className="relative block px-3 tab text-[#5B5B5B] xs:text-sm"
                     >
                       <span>Keystore JSON</span>
                     </button>
@@ -250,7 +250,7 @@ export default function Home() {
                       aria-controls="panel-3"
                       id="tab-3"
                       tabIndex="-1"
-                      className="relative block px-3 tab py-8 text-[#5B5B5B] xs:text-sm"
+                      className="relative block px-3 tab text-[#5B5B5B] xs:text-sm"
                     >
                       <span>Private Key</span>
                     </button>
@@ -290,10 +290,10 @@ export default function Home() {
         </dialog>
         <dialog
           id="my_modal_4"
-          className="modal w-full border-[#4B4F58] bg-[rgb(32,32,32)] px-2"
+          className="modal w-full mx-auto border-[#4B4F58] bg-[rgb(32,32,32)] px-2"
         >
           <div className="modal-box">
-            <form method="dialog" className="">
+            <form method="dialog" className="mb-10">
               {/* if there is a button in form, it will close the modal */}
               <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 mb-4">
                 ✕

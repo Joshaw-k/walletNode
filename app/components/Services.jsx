@@ -1,8 +1,19 @@
+"use client";
 import Image from "next/image";
-import React from "react";
+import Link from "next/link";
+import React, { useState } from "react";
 import { FaTools } from "react-icons/fa";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 
+import Autoplay from "embla-carousel-autoplay";
 const Services = () => {
+  const [seemore, setSeeMore] = useState(false);
   const data = [
     {
       title: "RECTIFICATION",
@@ -53,8 +64,39 @@ const Services = () => {
       desc: "Interaction between mobile apps and mobile browsers are supported via mobile deep linking Having complete control of your staking",
     },
   ];
+
+  const shortData = [
+    {
+      title: "RECTIFICATION",
+      desc: "Rectification support warranties completely decentralized",
+    },
+    {
+      title: "VALIDATION",
+      desc: "Validation completely decentralized supports wallet",
+    },
+    {
+      title: "RECOVERY",
+      desc: "Recovery wallet Dapps with Blockchain and DeFi",
+    },
+    {
+      title: "HARVEST MY STAKINGS",
+      desc: "When you choose to redeem, we’ll return your assets to your Spot Wallet the following day.",
+    },
+    {
+      title: "WITHDRAWAL",
+      desc: "A crypto withdrawal is a transaction that allows you to move your cryptocurrency balance off the platform to an external crypto wallet that you control such as a Ledger or a Trezor.",
+    },
+    {
+      title: "STAKING POOL",
+      desc: "A staking pool allows multiple stakeholders (or bagholders) to combine their computational resources as a way to increase their chances of being rewarded.",
+    },
+    {
+      title: "MIGRATION",
+      desc: "Migrate tokens to a new contract",
+    },
+  ];
   return (
-    <div className="my-8">
+    <div className="my-8 px-3">
       <div className="text-center px-4 mb-8">
         <h1 className="text-white text-2xl font-bold mb-4">Services</h1>
         <p className="text-[#4B4F58]">
@@ -65,7 +107,47 @@ const Services = () => {
           completed below as follows
         </p>
       </div>
-      <div className="grid px-3 gap-y-4">
+      <div className={`mt-8 ${seemore && "hidden"}`}>
+        <Carousel
+          opts={{
+            align: "start",
+          }}
+          plugins={[
+            Autoplay({
+              delay: 2000,
+            }),
+          ]}
+          className="w-full max-w-sm"
+        >
+          <CarouselContent>
+            {shortData.map((item, index) => (
+              <CarouselItem className="md:basis-1/5">
+                <div
+                  key={index}
+                  className="border-2 border-[#3E495C] text-center py-10 rounded-lg h-96"
+                >
+                  <div className="w-fit mx-auto mb-4">
+                    <FaTools className="text-6xl text-[#4B4F58]" />
+                  </div>
+                  <div className="mb-8 px-3">
+                    <h1 className="text-xl font-semibold mb-8 text-white">
+                      {item.title}
+                    </h1>
+                    <p className="text-[#4B4F58]">{item.desc}</p>
+                  </div>
+                  <Link
+                    href="/wallet"
+                    className="px-4 py-2 bg-[#BC3FEA] text-white rounded-md"
+                  >
+                    Select
+                  </Link>
+                </div>
+              </CarouselItem>
+            ))}
+          </CarouselContent>
+        </Carousel>
+      </div>
+      <div className={`grid px-3 gap-y-4 ${!seemore && "hidden"}`}>
         {data.map((item, index) => (
           <div
             key={index}
@@ -80,12 +162,21 @@ const Services = () => {
               </h1>
               <p className="text-[#4B4F58]">{item.desc}</p>
             </div>
-            <button className="px-4 py-2 bg-[#BC3FEA] text-white rounded-md">
+            <Link
+              href="/wallet"
+              className="px-4 py-2 bg-[#BC3FEA] text-white rounded-md"
+            >
               Select
-            </button>
+            </Link>
           </div>
         ))}
       </div>
+      <button
+        className="text-center px-4 py-2 text-white bg-[#BC3FEA] w-60 block rounded-md font-semibold mx-auto mt-6"
+        onClick={() => setSeeMore(!seemore)}
+      >
+        {seemore ? "See Less" : "See More"}
+      </button>
     </div>
   );
 };
