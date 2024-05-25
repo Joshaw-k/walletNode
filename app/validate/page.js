@@ -5,7 +5,7 @@ import Link from "next/link";
 export default function Home() {
   return (
     <div>
-      <div className="flex items-center justify-center h-[70vh]">
+      <div className="flex items-center justify-center h-[90vh]">
         <div>
           <div>
             <Image src={ValidateImg} width={300} height={300} alt="" />

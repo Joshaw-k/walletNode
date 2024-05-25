@@ -24,7 +24,6 @@ export default function RootLayout({ children }) {
           fontSans.variable
         )}
       >
-        <Header />
         {children}
       </body>
     </html>
