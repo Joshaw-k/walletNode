@@ -1,5 +1,5 @@
 import Image from "next/image";
-import ValidateImg from "../assets/validateError.png";
+import ValidateImg from "../assets/validateError.webp";
 import Link from "next/link";
 
 export default function Home() {
@@ -7,8 +7,14 @@ export default function Home() {
     <div>
       <div className="flex items-center justify-center h-[90vh]">
         <div>
-          <div>
-            <Image src={ValidateImg} width={300} height={300} alt="" />
+          <div className="w-fit mx-auto">
+            <Image
+              src={ValidateImg}
+              width={300}
+              height={300}
+              alt=""
+              className="scale-75"
+            />
           </div>
           <div className="text-center grid gap-y-3">
             <h1 className="text-white text-3xl">Wallet Connection Error!!!</h1>

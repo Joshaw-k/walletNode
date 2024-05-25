@@ -166,7 +166,7 @@ export default function Home() {
           className="modal w-full mx-auto border-[#4B4F58] bg-[#b1afaf] px-2"
         >
           <div className="modal-box">
-            <form method="dialog" className="mb-10">
+            <form method="dialog" className="mb-12">
               {/* if there is a button in form, it will close the modal */}
               <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
                 ✕
@@ -190,7 +190,7 @@ export default function Home() {
           className="modal w-full mx-auto border-[#4B4F58] bg-[#b1afaf] px-2"
         >
           <div className="modal-box">
-            <form method="dialog" className="mb-10">
+            <form method="dialog" className="mb-12">
               {/* if there is a button in form, it will close the modal */}
               <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
                 ✕
@@ -214,7 +214,7 @@ export default function Home() {
           <div className="modal-box">
             <form method="dialog" className="mb-4">
               {/* if there is a button in form, it will close the modal */}
-              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 text-lg">
+              <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
                 ✕
               </button>
             </form>
@@ -296,7 +296,7 @@ export default function Home() {
           className="modal w-full mx-auto border-[#4B4F58] bg-[#b1afaf] px-2"
         >
           <div className="modal-box">
-            <form method="dialog" className="mb-10">
+            <form method="dialog" className="mb-12">
               {/* if there is a button in form, it will close the modal */}
               <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2 mb-4">
                 ✕

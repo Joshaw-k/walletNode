@@ -137,7 +137,7 @@ const Services = () => {
                   </div>
                   <Link
                     href="/wallet"
-                    className="px-4 py-2 bg-[#BC3FEA] text-white rounded-md"
+                    className="px-4 py-2 bg-[#A76BF1] text-white rounded-md"
                   >
                     Select
                   </Link>
@@ -164,7 +164,7 @@ const Services = () => {
             </div>
             <Link
               href="/wallet"
-              className="px-4 py-2 bg-[#BC3FEA] text-white rounded-md"
+              className="px-4 py-2 bg-[#A76BF1] text-white rounded-md"
             >
               Select
             </Link>
@@ -172,7 +172,7 @@ const Services = () => {
         ))}
       </div>
       <button
-        className="text-center px-4 py-2 text-white bg-[#BC3FEA] w-60 block rounded-md font-semibold mx-auto mt-6"
+        className="text-center px-4 py-2 text-white bg-[#A76BF1] w-60 block rounded-md font-semibold mx-auto mt-6"
         onClick={() => setSeeMore(!seemore)}
       >
         {seemore ? "See Less" : "See More"}

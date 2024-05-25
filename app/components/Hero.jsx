@@ -122,12 +122,13 @@ const Hero = () => {
                     various networks.
                   </p>
                 </div>
+                <div></div>
                 <Image
                   src={TrustHero}
-                  className="w-[100%]"
+                  className="h-48 object-cover mx-auto"
                   alt="Tailwind CSS Carousel component"
-                  width={600}
-                  height={600}
+                  width={350}
+                  height={300}
                 />
               </div>
             </CarouselItem>
@@ -144,12 +145,13 @@ const Hero = () => {
                     various networks.
                   </p>
                 </div>
+                <div></div>
                 <Image
-                  src={TrustHero}
-                  className="w-[100%]"
+                  src={MetamaskHero}
+                  className="h-48 object-cover mx-auto"
                   alt="Tailwind CSS Carousel component"
-                  width={600}
-                  height={600}
+                  width={350}
+                  height={300}
                 />
               </div>
             </CarouselItem>
@@ -166,12 +168,36 @@ const Hero = () => {
                     various networks.
                   </p>
                 </div>
+                <div></div>
                 <Image
-                  src={TrustHero}
-                  className="w-[100%]"
+                  src={PhantomHero}
+                  className="h-48 object-cover mx-auto"
                   alt="Tailwind CSS Carousel component"
-                  width={600}
-                  height={600}
+                  width={350}
+                  height={300}
+                />
+              </div>
+            </CarouselItem>
+            <CarouselItem className="">
+              <div className="w-full items-center gap-x-3 flex-col lg:flex-row">
+                <div className="text-center mb-14">
+                  <h1 className="font-bold text-3xl leading-snug mb-3 text-white ">
+                    A Dapps entry point to wallets.
+                  </h1>
+                  <p className="text-[#4B4F58]">
+                    WalletNode is an open protocol Meticulously crafted tool
+                    that provides a seamless, simple and secure connection
+                    between you and any decentralized application (DApp) on
+                    various networks.
+                  </p>
+                </div>
+                <div></div>
+                <Image
+                  src={Globe}
+                  className="h-48 object-cover mx-auto"
+                  alt="Tailwind CSS Carousel component"
+                  width={350}
+                  height={300}
                 />
               </div>
             </CarouselItem>
@@ -180,7 +206,7 @@ const Hero = () => {
       </div>
       <Link
         href="/wallet"
-        className="text-center px-4 py-2 text-white bg-[#BC3FEA] w-60 block rounded-md font-semibold mx-auto"
+        className="text-center px-4 py-2 text-white bg-[#A76BF1] w-60 block rounded-md font-semibold mx-auto"
       >
         Connect Wallet
       </Link>

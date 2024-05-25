@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import { bitPrices } from "../utils/bitPrices";
 import Image from "next/image";
 import Link from "next/link";
+import Logo from "../assets/logo.png";
 
 const Header = ({ coinData }) => {
   const handlePercentage = (percent) => {
@@ -76,12 +77,18 @@ const Header = ({ coinData }) => {
           </div>
         )}
         <div className="mt-8 text-white flex items-center justify-between w-[90%] mx-auto">
-          <Link href="/" className="font-bold text-4xl text-[#BC3FEA]">
-            LOGO
+          <Link href="/" className="w-11">
+            <Image
+              src={Logo}
+              width={80}
+              height={80}
+              alt=""
+              className="scale-150"
+            />
           </Link>
           <div className="font-semibold">
             <Link href="/wallet">
-              <button className="px-3 py-3 text-[#BC3FEA] hover:bg-[#BC3FEA] hover:text-white rounded-full">
+              <button className="px-3 py-3 text-[#A76BF1] hover:bg-[#A76BF1] hover:text-white rounded-full">
                 Connect Wallet
               </button>
             </Link>
