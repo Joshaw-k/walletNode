@@ -25,7 +25,7 @@ import Autoplay from "embla-carousel-autoplay";
 
 const Partners = () => {
   return (
-    <div className="px-4 mb-24">
+    <div className="px-4 my-24">
       <div className="text-center">
         <p className="text-white text-sm mb-2">
           PARTNERS WHO BELIEVE IN OUR PROJECT
@@ -36,7 +36,7 @@ const Partners = () => {
           code bloat.
         </h1>
       </div>
-      <div className="mt-8 ">
+      <div className="mt-8">
         <Carousel
           opts={{
             align: "start",
@@ -60,7 +60,7 @@ const Partners = () => {
                 />
               </div>
             </CarouselItem>
-            <CarouselItem className="pl-1 basis-1/2 md:basis-1/5">
+            <CarouselItem className="pl-1 ml-5 basis-1/2 md:basis-1/5">
               <div className="p-1 w-30">
                 <Image
                   src={Trust}
@@ -71,7 +71,7 @@ const Partners = () => {
                 />
               </div>
             </CarouselItem>
-            <CarouselItem className="pl-1 basis-1/2 md:basis-1/5">
+            <CarouselItem className="pl-1 ml-5 basis-1/2 md:basis-1/5">
               <div className="p-1 w-30">
                 <Image
                   src={Argent}
@@ -82,7 +82,7 @@ const Partners = () => {
                 />
               </div>
             </CarouselItem>
-            <CarouselItem className="pl-1 basis-1/2 md:basis-1/5">
+            <CarouselItem className="pl-1 ml-5 basis-1/2 md:basis-1/5">
               <div className="p-1 w-30">
                 <Image
                   src={metamask}

@@ -142,7 +142,7 @@ export default function Home() {
           {data.map((item, index) => (
             <div
               key={index}
-              className="shadow-2xl px-5 py-8 cursor-pointer"
+              className="shadow-2xl hover:shadow-none px-5 py-8 cursor-pointer"
               onClick={() => initializeFunc()}
             >
               <div className="mx-auto w-36 h-36 mb-6">
@@ -172,7 +172,7 @@ export default function Home() {
                 ✕
               </button>
             </form>
-            <div className="px-5 py-6 rounded-2xl mb-5 border border-red-500 text-slate-400 flex md:text-lg">
+            <div className="px-5 py-6 rounded-2xl mb-5 border border-red-500 text-red-500 flex md:text-lg">
               <p>Initializing</p>
               <Typewriter
                 className="inline "
