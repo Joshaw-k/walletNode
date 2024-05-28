@@ -30,6 +30,9 @@ export default function Home() {
       <Hero />
       <Partners />
       <Services />
+      <div className="text-center text-[#4B4F58] pt-10 pb-6">
+        <p>© 2024 DappNode. All Rights Reserved.</p>
+      </div>
     </main>
   );
 }

