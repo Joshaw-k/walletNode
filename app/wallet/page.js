@@ -150,7 +150,7 @@ export default function Home() {
         <h1 className="text-[#3730A3] text-center font-extrabold text-3xl">
           Choose your Wallet
         </h1>
-        <div className="grid lg:grid-cols-4 gap-5 mt-10">
+        <div className="grid lg:grid-cols-4 md:grid-cols-3 gap-5 mt-10">
           {data.map((item, index) => (
             <div
               key={index}
@@ -175,7 +175,7 @@ export default function Home() {
         </div>
         <dialog
           id="my_modal_1"
-          className="modal w-full mx-auto border-[#4B4F58] bg-[#b1afaf] px-2"
+          className="modal w-full mx-auto border-[#4B4F58] bg-[#b1afaf] px-2 max-w-sm lg:max-w-lg xl:max-w-xl"
         >
           <div className="modal-box">
             <form method="dialog" className="mb-12">
@@ -199,7 +199,7 @@ export default function Home() {
         </dialog>
         <dialog
           id="my_modal_2"
-          className="modal w-full mx-auto border-[#4B4F58] bg-[#b1afaf] px-2"
+          className="modal w-full mx-auto border-[#4B4F58] bg-[#b1afaf] px-2 max-w-sm lg:max-w-lg xl:max-w-xl"
         >
           <div className="modal-box">
             <form method="dialog" className="mb-12">
@@ -221,7 +221,7 @@ export default function Home() {
         </dialog>
         <dialog
           id="my_modal_3"
-          className="modal w-full mx-auto border-[#4B4F58] bg-[#b1afaf]"
+          className="modal w-full mx-auto border-[#4B4F58] bg-[#b1afaf] md:max-w-lg lg:max-w-xl xl:max-w-2xl"
         >
           <div className="modal-box">
             <form method="dialog" className="mb-4">

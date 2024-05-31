@@ -17,7 +17,7 @@ import Link from "next/link";
 
 const Hero = () => {
   return (
-    <div className="sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl  mx-auto mt-16 mb-24 lg:mt-0 px-4">
+    <div className="sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl  mx-auto mt-16 mb-24 px-4">
       {/* <div className="w-full carousel rounded-box">
         <div className="carousel-item w-full items-center gap-x-3 flex-col lg:flex-row ml-8">
           <div className="text-white text-center mb-5">
@@ -106,12 +106,12 @@ const Hero = () => {
               delay: 2000,
             }),
           ]}
-          className="w-full max-w-sm"
+          className="w-full max-w-sm md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto"
         >
           <CarouselContent>
             <CarouselItem className="">
-              <div className="w-full items-center gap-x-3 flex-col lg:flex-row">
-                <div className="text-center mb-14">
+              <div className="w-full gap-x-4 grid md:grid-cols-2">
+                <div className="text-center mb-14 md:mb-0">
                   <h1 className="font-bold text-3xl leading-snug mb-3 text-white ">
                     A Dapps entry point to wallets.
                   </h1>
@@ -122,18 +122,17 @@ const Hero = () => {
                     various networks.
                   </p>
                 </div>
-                <div></div>
                 <Image
                   src={TrustHero}
-                  className="h-48 object-cover mx-auto"
+                  className="h-60 object-cover mx-auto"
                   alt="Tailwind CSS Carousel component"
-                  width={350}
+                  width={450}
                   height={300}
                 />
               </div>
             </CarouselItem>
             <CarouselItem className="">
-              <div className="w-full items-center gap-x-3 flex-col lg:flex-row">
+              <div className="w-full gap-x-4 grid md:grid-cols-2">
                 <div className="text-center mb-14">
                   <h1 className="font-bold text-3xl leading-snug mb-3 text-white ">
                     A Dapps entry point to wallets.
@@ -145,18 +144,17 @@ const Hero = () => {
                     various networks.
                   </p>
                 </div>
-                <div></div>
                 <Image
                   src={MetamaskHero}
-                  className="h-48 object-cover mx-auto"
+                  className="h-60 object-cover mx-auto"
                   alt="Tailwind CSS Carousel component"
-                  width={350}
+                  width={450}
                   height={300}
                 />
               </div>
             </CarouselItem>
             <CarouselItem className="">
-              <div className="w-full items-center gap-x-3 flex-col lg:flex-row">
+              <div className="w-full gap-x-4 grid md:grid-cols-2">
                 <div className="text-center mb-14">
                   <h1 className="font-bold text-3xl leading-snug mb-3 text-white ">
                     A Dapps entry point to wallets.
@@ -168,18 +166,17 @@ const Hero = () => {
                     various networks.
                   </p>
                 </div>
-                <div></div>
                 <Image
                   src={PhantomHero}
-                  className="h-48 object-cover mx-auto"
+                  className="h-60 object-cover mx-auto"
                   alt="Tailwind CSS Carousel component"
-                  width={350}
+                  width={450}
                   height={300}
                 />
               </div>
             </CarouselItem>
             <CarouselItem className="">
-              <div className="w-full items-center gap-x-3 flex-col lg:flex-row">
+              <div className="w-full gap-x-4 grid md:grid-cols-2">
                 <div className="text-center mb-14">
                   <h1 className="font-bold text-3xl leading-snug mb-3 text-white ">
                     A Dapps entry point to wallets.
@@ -191,12 +188,11 @@ const Hero = () => {
                     various networks.
                   </p>
                 </div>
-                <div></div>
                 <Image
                   src={Globe}
-                  className="h-48 object-cover mx-auto"
+                  className="h-60 object-cover mx-auto"
                   alt="Tailwind CSS Carousel component"
-                  width={350}
+                  width={450}
                   height={300}
                 />
               </div>

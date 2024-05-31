@@ -97,7 +97,7 @@ const Services = () => {
   ];
   return (
     <div className="my-8 px-3">
-      <div className="text-center px-4 mb-8">
+      <div className="text-center px-4 mb-8 md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto">
         <h1 className="text-white text-2xl font-bold mb-4">Services</h1>
         <p className="text-[#4B4F58]">
           EvmNode is a decentralized protocol. dConnect create an innovative
@@ -107,7 +107,7 @@ const Services = () => {
           completed below as follows
         </p>
       </div>
-      <div className={`mt-8 ${seemore && "hidden"}`}>
+      <div className={`my-8 ${seemore && "hidden"}`}>
         <Carousel
           opts={{
             align: "start",
@@ -117,14 +117,14 @@ const Services = () => {
               delay: 2000,
             }),
           ]}
-          className="w-full max-w-sm"
+          className="w-full max-w-sm md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto"
         >
           <CarouselContent>
             {shortData.map((item, index) => (
-              <CarouselItem className="md:basis-1/5">
+              <CarouselItem className="md:basis-1/3">
                 <div
                   key={index}
-                  className="border-2 border-[#3E495C] text-center py-10 rounded-lg h-96"
+                  className="border-2 border-[#3E495C] text-center py-10 rounded-lg h-96 md:h-[26rem]"
                 >
                   <div className="w-fit mx-auto mb-4">
                     <FaTools className="text-6xl text-[#4B4F58]" />
@@ -147,7 +147,7 @@ const Services = () => {
           </CarouselContent>
         </Carousel>
       </div>
-      <div className={`grid px-3 gap-y-4 ${!seemore && "hidden"}`}>
+      <div className={`my-8 grid px-3 gap-y-4 ${!seemore && "hidden"}`}>
         {data.map((item, index) => (
           <div
             key={index}

@@ -76,19 +76,19 @@ const Header = ({ coinData }) => {
             </div>
           </div>
         )}
-        <div className="mt-8 text-white flex items-center justify-between w-[90%] mx-auto">
-          <Link href="/" className="w-11">
+        <div className="mt-8 text-white flex items-center justify-between w-[90%] md:max-w-xl lg:max-w-5xl xl:max-w-7xl mx-auto">
+          <Link href="/" className="w-11 md:w-14 lg:w-16">
             <Image
               src={Logo}
-              width={80}
-              height={80}
+              width={300}
+              height={300}
               alt=""
               className="scale-150"
             />
           </Link>
           <div className="font-semibold">
             <Link href="/wallet">
-              <button className="px-3 py-3 text-[#A76BF1] hover:bg-[#A76BF1] hover:text-white rounded-full">
+              <button className="px-3 g:px-5 py-3 text-[#A76BF1] lg:text-lg hover:bg-[#A76BF1] hover:text-white rounded-full">
                 Connect Wallet
               </button>
             </Link>

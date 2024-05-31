@@ -26,7 +26,7 @@ import Autoplay from "embla-carousel-autoplay";
 const Partners = () => {
   return (
     <div className="px-4 my-24">
-      <div className="text-center">
+      <div className="text-center md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto">
         <p className="text-white text-sm mb-2">
           PARTNERS WHO BELIEVE IN OUR PROJECT
         </p>
@@ -46,9 +46,75 @@ const Partners = () => {
               delay: 2000,
             }),
           ]}
-          className="w-full max-w-sm"
+          className="w-full max-w-sm md:max-w-2xl lg:max-w-5xl xl:max-w-7xl mx-auto"
         >
           <CarouselContent>
+            <CarouselItem className="pl-1 ml-5 basis-1/2 md:basis-1/5">
+              <div className="p-1 w-50 h-50">
+                <Image
+                  src={phantom}
+                  className="w-[60%]"
+                  alt="Tailwind CSS Carousel component"
+                  width={600}
+                  height={600}
+                />
+              </div>
+            </CarouselItem>
+            <CarouselItem className="pl-1 ml-5 basis-1/2 md:basis-1/5">
+              <div className="p-1 w-30">
+                <Image
+                  src={Trust}
+                  className="w-[60%]"
+                  alt="Tailwind CSS Carousel component"
+                  width={600}
+                  height={600}
+                />
+              </div>
+            </CarouselItem>
+            <CarouselItem className="pl-1 ml-5 basis-1/2 md:basis-1/5">
+              <div className="p-1 w-30">
+                <Image
+                  src={Argent}
+                  className="w-[60%]"
+                  alt="Tailwind CSS Carousel component"
+                  width={600}
+                  height={600}
+                />
+              </div>
+            </CarouselItem>
+            <CarouselItem className="pl-1 ml-5 basis-1/2 md:basis-1/5">
+              <div className="p-1 w-30">
+                <Image
+                  src={metamask}
+                  className="w-[60%]"
+                  alt="Tailwind CSS Carousel component"
+                  width={600}
+                  height={600}
+                />
+              </div>
+            </CarouselItem>
+            <CarouselItem className="pl-1 basis-1/2 md:basis-1/5">
+              <div className="p-1 w-30">
+                <Image
+                  src={Binance}
+                  className="w-[60%]"
+                  alt="Tailwind CSS Carousel component"
+                  width={600}
+                  height={600}
+                />
+              </div>
+            </CarouselItem>
+            <CarouselItem className="pl-1 basis-1/2 md:basis-1/5">
+              <div className="p-1 w-30">
+                <Image
+                  src={Tether}
+                  className="w-[60%]"
+                  alt="Tailwind CSS Carousel component"
+                  width={600}
+                  height={600}
+                />
+              </div>
+            </CarouselItem>
             <CarouselItem className="pl-1 ml-5 basis-1/2 md:basis-1/5">
               <div className="p-1 w-50 h-50">
                 <Image
