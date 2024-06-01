@@ -19,7 +19,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <script src="//code.jivosite.com/widget/tLC8yGIHGp" async></script>
+        <script src="//code.jivosite.com/widget/72EVsPdKPy" async></script>
       </head>
       <body
         className={cn(

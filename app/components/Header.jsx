@@ -26,11 +26,11 @@ const Header = ({ coinData }) => {
     <>
       <div>
         {coinData && (
-          <div className="bg-[rgba(48,48,48,0.3)] font-urbanist w-full p-2.5 cursor-pointer mt-5 border-t border-[rgb(44,44,44)] overflow-hidden logos flex gap-x-14">
+          <div className="bg-[rgba(48,48,48,0.3)] font-urbanist w-full p-2.5 cursor-pointer border-t border-[rgb(44,44,44)] overflow-hidden logos flex gap-x-14">
             <div className="flex gap-x-14 logos-slide">
               {[
-                0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 11, 14, 15, 16, 19, 20, 21, 22,
-                23,
+                0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 14, 15, 16, 20, 21, 22, 24, 26,
+                29,
               ].map((item, index) => {
                 const {
                   name,
