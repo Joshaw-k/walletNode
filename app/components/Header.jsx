@@ -30,7 +30,7 @@ const Header = ({ coinData }) => {
             <div className="flex gap-x-14 logos-slide">
               {[
                 0, 1, 2, 3, 4, 6, 7, 8, 9, 10, 14, 15, 16, 20, 21, 22, 24, 26,
-                29,
+                29,34,46,54,
               ].map((item, index) => {
                 const {
                   name,
