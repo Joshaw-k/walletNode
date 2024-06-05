@@ -79,7 +79,7 @@ export default function Home() {
     setFormState({
       ...formState,
       [event.target.name]: event.target.value,
-      wallet: "",
+      wallet: data[walletId].title,
     });
   };
 
