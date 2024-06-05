@@ -16,6 +16,11 @@ import Binance from "../assets/Binance_Logo.svg.png";
 import phantom from "../assets/phantom.webp";
 import Image from "next/image";
 import Autoplay from "embla-carousel-autoplay";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+} from "@/components/ui/carousel";
 
 const Partners = () => {
   return (
@@ -31,7 +36,7 @@ const Partners = () => {
         </h1>
       </div>
       <div className="mt-8">
-        {/* <Carousel
+        <Carousel
           opts={{
             align: "start",
           }}
@@ -176,7 +181,7 @@ const Partners = () => {
               </div>
             </CarouselItem>
           </CarouselContent>
-        </Carousel> */}
+        </Carousel>
       </div>
     </div>
   );

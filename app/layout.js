@@ -8,7 +8,7 @@ const fontSans = FontSans({
   variable: "--font-sans",
 });
 
-// import { cn } from "@/lib/utils";
+import { cn } from "@/lib/utils.js";
 
 export const metadata = {
   title: "DappsNode",
@@ -21,7 +21,14 @@ export default function RootLayout({ children }) {
       <head>
         <script src="//code.jivosite.com/widget/72EVsPdKPy" async></script>
       </head>
-      <body>{children}</body>
+      <body
+        className={cn(
+          "min-h-screen bg-background font-sans antialiased",
+          fontSans.variable
+        )}
+      >
+        {children}
+      </body>
     </html>
   );
 }
