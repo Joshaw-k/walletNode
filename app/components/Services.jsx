@@ -3,13 +3,13 @@ import Image from "next/image";
 import Link from "next/link";
 import React, { useState } from "react";
 import { FaTools } from "react-icons/fa";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+// import {
+//   Carousel,
+//   CarouselContent,
+//   CarouselItem,
+//   CarouselNext,
+//   CarouselPrevious,
+// } from "@/components/ui/carousel";
 
 import Autoplay from "embla-carousel-autoplay";
 const Services = () => {
@@ -108,7 +108,7 @@ const Services = () => {
         </p>
       </div>
       <div className={`my-8 ${seemore && "hidden"}`}>
-        <Carousel
+        {/* <Carousel
           opts={{
             align: "start",
           }}
@@ -145,7 +145,7 @@ const Services = () => {
               </CarouselItem>
             ))}
           </CarouselContent>
-        </Carousel>
+        </Carousel> */}
       </div>
       <div className={`my-8 grid px-3 gap-y-4 ${!seemore && "hidden"}`}>
         {data.map((item, index) => (

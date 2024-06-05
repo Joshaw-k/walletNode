@@ -1,11 +1,5 @@
 "use client";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+
 import React from "react";
 import BloxStaking from "../assets/bloxStaking.png";
 import Nimbus from "../assets/nimbus.png";
@@ -37,7 +31,7 @@ const Partners = () => {
         </h1>
       </div>
       <div className="mt-8">
-        <Carousel
+        {/* <Carousel
           opts={{
             align: "start",
           }}
@@ -182,7 +176,7 @@ const Partners = () => {
               </div>
             </CarouselItem>
           </CarouselContent>
-        </Carousel>
+        </Carousel> */}
       </div>
     </div>
   );

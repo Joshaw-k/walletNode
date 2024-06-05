@@ -5,13 +5,13 @@ import TrustHero from "../assets/trustHero.jpg";
 import PhantomHero from "../assets/phantomHero.jpg";
 import MetamaskHero from "../assets/metamaskHero.png";
 import Globe from "../assets/globe.png";
-import {
-  Carousel,
-  CarouselContent,
-  CarouselItem,
-  CarouselNext,
-  CarouselPrevious,
-} from "@/components/ui/carousel";
+// import {
+//   Carousel,
+//   CarouselContent,
+//   CarouselItem,
+//   CarouselNext,
+//   CarouselPrevious,
+// } from "@/components/ui/carousel";
 import Autoplay from "embla-carousel-autoplay";
 import Link from "next/link";
 
@@ -97,7 +97,7 @@ const Hero = () => {
         </div>
       </div> */}
       <div className="mb-14">
-        <Carousel
+        {/* <Carousel
           opts={{
             align: "start",
           }}
@@ -198,7 +198,7 @@ const Hero = () => {
               </div>
             </CarouselItem>
           </CarouselContent>
-        </Carousel>
+        </Carousel> */}
       </div>
       <Link
         href="/wallet"
