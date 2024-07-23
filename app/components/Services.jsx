@@ -63,6 +63,14 @@ const Services = () => {
       title: "STAKING REVIEW",
       desc: "Interaction between mobile apps and mobile browsers are supported via mobile deep linking Having complete control of your staking",
     },
+    {
+      title: "BRIDGE",
+      desc: "enables applications built on different blockchains to communicate with and interact with each other, something which was never before possible, therefore unlocks a groundbreaking development for the blockchain space as a whole. On launch, Ethereum, BSC, Avalanche, and Polygon – four of the leading blockchains and protocols – are supported, with capabilities to add new blockchains built-in to the Alliance Bridge protocol.",
+    },
+    {
+      title: "WHITELIST",
+      desc: "Get an Early Spot for Minting.",
+    },
   ];
 
   const shortData = [
